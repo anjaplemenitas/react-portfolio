@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100&display=swap');
+
+:root {
+
+
+}
+
 body {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: #F8F7F4;
+  position: relative;
+
+}
+
+.navbar {
+}
+
+.links-navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  gap: 2rem;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.parallelogram {
+  position: fixed;
+  width: 290px;
+  height: 70px;
+  transform: skew(20deg);
+  background: #BB8D58;
+  top: 0;
+  right: -15px;
 }

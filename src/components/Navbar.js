@@ -3,7 +3,13 @@ import "../app.css";
 
 export const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className="navbar">
+      <div className="parallelogram"></div>
+      <div className="links-navbar">
+        <div>Project</div>
+        <div>Contact</div>
+      </div>
+    </div>
   )
 }
 
