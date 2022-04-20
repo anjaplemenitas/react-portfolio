@@ -1,35 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100&family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Nunito:wght@200&display=swap');
+
 
 :root {
+	/* color */
+  --c-brown: #BB8D58;
+  --c-black: #0000;
 
+  /* font-size */
+  --f-u25: 25px;
 
+  /* font-family */
+  --f-thin: 'Nunito', sans-serif;
+  --f-1title: 'Lato', sans-serif;
 }
 
 body {
-  color: black;
+  color: var(--c-black);
   background-color: #F8F7F4;
   position: relative;
 
 }
 
-.navbar {
-}
-
 .links-navbar {
   display: flex;
   justify-content: flex-end;
-  position: relative;
   gap: 2rem;
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
+  position: relative;
+  padding-right: 15px;
+  padding-top: 8px;
+  font-family: var(--f-thin);
+  font-size: var(--f-u25);
 }
+
 
 .parallelogram {
   position: fixed;
   width: 290px;
-  height: 70px;
-  transform: skew(20deg);
-  background: #BB8D58;
+  height: 75px;
+  transform: skew(35deg);
+  background: var(--c-brown);
   top: 0;
-  right: -15px;
+  right: -25px;
 }

@@ -3,11 +3,11 @@ import "../app.css";
 
 export const Navbar = () => {
   return (
-    <div className="navbar">
+    <div>
       <div className="parallelogram"></div>
       <div className="links-navbar">
-        <div>Project</div>
-        <div>Contact</div>
+        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Project</a>
+        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Contact</a>
       </div>
     </div>
   )
