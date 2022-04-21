@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Nunito:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Lekton&family=Nunito:wght@200&display=swap');
 
 :root {
 	/* color */
   --c-brown: #BB8D58;
-  --c-black: #0000;
+  --c-black: #000;
 
   /* font-size */
   --f-u25: 25px;
+  --f-u30: 30px;
+  --f-u50: 50px;
+  --f-umax: 10rem;
 
   /* font-family */
   --f-thin: 'Nunito', sans-serif;
   --f-1title: 'Lato', sans-serif;
+  --f-cv: 'Lekton', sans-serif;
+
 }
 
 body {
-  color: var(--c-black);
+  color: #000;
   background-color: #F8F7F4;
   position: relative;
-
 }
 
 .links-navbar {

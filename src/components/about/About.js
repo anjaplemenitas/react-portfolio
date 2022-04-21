@@ -4,9 +4,9 @@ import "./about.css";
 export const About = () => {
   return (
     <div className="about">
-      <div>Anja Plemenitas</div>
-      <div>Front-end web develeper.</div>
-      <div>More about me: <a href="/">CV</a></div>
+      <div className="about-name">ANJA PLEMENITAS</div>
+      <div className="about-title">Front-end web <br></br> develeper.</div>
+      <div className="about-more">More about me: <a href="/">CV</a></div>
     </div>
   )
 }

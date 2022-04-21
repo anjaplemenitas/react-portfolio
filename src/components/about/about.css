@@ -1,0 +1,28 @@
+.about {
+  color: var(--c-black);
+  padding: 5rem;
+}
+
+.about-name {
+  font-family: var(--f-1title);
+  font-size: var(--f-u50);
+}
+
+.about-title {
+  font-family: var(--f-1title);
+  font-size: var(--f-umax);
+  font-weight: bold;
+}
+
+.about-more {
+  font-family: var(--f-thin);
+  font-size: var(--f-u30);
+  padding-top: 3rem;
+}
+
+.about-more > a {
+  font-family: var(--f-cv);
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--c-black);
+}
