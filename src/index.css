@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Lekton&family=Nunito:wght@200&display=swap');
 
+
+
 :root {
 	/* color */
   --c-brown: #BB8D58;
@@ -21,6 +23,7 @@
   --f-cv: 'Lekton', sans-serif;
 }
 
+
 /* navbar */
 
 body {
@@ -35,8 +38,7 @@ body {
   justify-content: flex-end;
   gap: 2rem;
   position: relative;
-  padding-right: 15px;
-  padding-top: 8px;
+  padding: 1rem 3rem 0 0;
   font-family: var(--f-thin);
   font-size: var(--f-u25);
 }
@@ -46,8 +48,8 @@ body {
   position: absolute;
   top: -14px;
   right: -35px;
-  width: 290px;
-  height: 75px;
+  width: 21rem;
+  height: 5rem;
   transform: skew(35deg);
   background: var(--c-brown);
 }
@@ -59,6 +61,7 @@ body {
   text-align: center;
   font-family: var(--f-thin);
   background-position: bottom;
+  margin: 6rem 0 1rem;
 }
 
 .title-footer {

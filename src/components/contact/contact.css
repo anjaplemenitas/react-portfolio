@@ -1,10 +1,28 @@
+.contact {
+  font-family: var(--f-1title);
+  margin-left: 15rem;
+}
+
+h3 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.socials {
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+
+
+
+/* lines */
+
 .main-line {
   display: block;
   height: 1px;
   border: 0;
   border-top: 10px solid #B98548;
-  margin: 0 0 0 5%;
-  width: 95%;
 }
 
 .small-line {
@@ -12,6 +30,4 @@
   height: 1px;
   border: 0;
   border-top: 5px solid #B98548;
-  margin: 0 0 0 10%;
-  width: 90%;
 }
