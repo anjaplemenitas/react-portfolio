@@ -12,9 +12,9 @@ export const Contact = () => {
           <h2>Socials</h2>
         <hr className="small-line"></hr>
         <ul>
-          <li>Linkedin</li>
-          <li>GitHub</li>
-          <li>Instagram</li>
+          <li><a href="https://www.linkedin.com/in/anjaplemenitas/">Linkedin</a></li>
+          <li><a href="https://github.com/anjaplemenitas">GitHub</a></li>
+          <li><a href="https://www.instagram.com/anjaplemenitas">Instagram</a></li>
         </ul>
       </div>
     </div>
