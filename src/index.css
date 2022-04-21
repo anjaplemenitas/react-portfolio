@@ -21,13 +21,13 @@
   --f-cv: 'Lekton', sans-serif;
 }
 
-
 /* navbar */
 
 body {
   color: var(--c-black);
   background-color: #F8F7F4;
   position: relative;
+  margin: 0;
 }
 
 .links-navbar {
@@ -43,13 +43,13 @@ body {
 
 
 .parallelogram {
-  position: fixed;
+  position: absolute;
+  top: -14px;
+  right: -35px;
   width: 290px;
   height: 75px;
   transform: skew(35deg);
   background: var(--c-brown);
-  top: 0;
-  right: -25px;
 }
 
 

@@ -1,0 +1,17 @@
+.main-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 10px solid #B98548;
+  margin: 0 0 0 5%;
+  width: 95%;
+}
+
+.small-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #B98548;
+  margin: 0 0 0 10%;
+  width: 90%;
+}
