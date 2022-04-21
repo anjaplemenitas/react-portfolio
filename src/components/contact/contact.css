@@ -1,0 +1,44 @@
+.contact {
+  font-family: var(--f-1title);
+  margin-left: 15rem;
+}
+
+h3 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.socials {
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+
+/* socials */
+
+ul {
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: var(--c-black);
+  font-size: var(--f-u20);
+
+}
+
+
+/* lines */
+
+.main-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 10px solid var(--c-brown);
+}
+
+.small-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid var(--c-brown);
+}
