@@ -8,6 +8,8 @@
   --c-black: #000;
 
   /* font-size */
+  --f-u15: 15px;
+  --f-u20: 20px;
   --f-u25: 25px;
   --f-u30: 30px;
   --f-u50: 50px;
@@ -17,11 +19,13 @@
   --f-thin: 'Nunito', sans-serif;
   --f-1title: 'Lato', sans-serif;
   --f-cv: 'Lekton', sans-serif;
-
 }
 
+
+/* navbar */
+
 body {
-  color: #000;
+  color: var(--c-black);
   background-color: #F8F7F4;
   position: relative;
 }
@@ -46,4 +50,33 @@ body {
   background: var(--c-brown);
   top: 0;
   right: -25px;
+}
+
+
+/* footer */
+
+.footer {
+  text-align: center;
+  font-family: var(--f-thin);
+  background-position: bottom;
+}
+
+.title-footer {
+  font-size: var(--f-u15);
+}
+
+.built-with-footer {
+  font-size: var(--f-u20);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+  white-space: pre;
+}
+
+.built-with-footer > a {
+  text-decoration: none;
+  color: var(--c-black);
+  top: 2px;
+  position: relative;
 }
