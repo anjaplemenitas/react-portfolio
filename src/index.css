@@ -23,6 +23,22 @@
   --f-cv: 'Lekton', sans-serif;
 }
 
+/* lines */
+
+.main-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 10px solid var(--c-brown);
+}
+
+.small-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid var(--c-brown);
+}
+
 
 /* navbar */
 
