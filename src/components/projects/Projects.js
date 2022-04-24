@@ -4,6 +4,7 @@ import data from './portfolio.js';
 import { FaGithub } from "react-icons/fa";
 
 
+
 // logo
 class Question extends React.Component {
   render() {
@@ -18,11 +19,11 @@ function Projects() {
       <hr className="main-line"></hr>
       <section className="project-container">
       {
-        data.map(({id, title, type, made_with, github}) => {
+        data.map(({image, title, type, made_with, github}) => {
           return (
               <div className="portfolio-items">
                 <div className="project-img">
-                  <img scr="/" alt="/"></img>
+                  <img scr={image} alt={title}></img>
                 </div>
                 <div className="project-info">
                   <div className="project-title">
