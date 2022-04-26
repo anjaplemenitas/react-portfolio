@@ -8,6 +8,9 @@
 	/* color */
   --c-brown: #BB8D58;
   --c-black: #000;
+  --c-grey: #505050;
+  --c-lightgrey: #787878;
+  --c-white: #ffffff;
 
   /* font-size */
   --f-u15: 15px;

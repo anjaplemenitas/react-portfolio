@@ -19,11 +19,11 @@ function Projects() {
       <hr className="main-line"></hr>
       <section className="project-container">
       {
-        data.map(({image, title, type, made_with, github}) => {
+        data.map(({id, image, title, type, made_with, github}) => {
           return (
-              <div className="portfolio-items">
+              <div key={id} className="portfolio-items">
                 <div className="project-img">
-                  <img scr={image} alt={title}></img>
+                  <img src={image} alt={title}></img>
                 </div>
                 <div className="project-info">
                   <div className="project-title">
