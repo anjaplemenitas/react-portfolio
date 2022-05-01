@@ -26,3 +26,17 @@
   font-weight: bolder;
   color: var(--c-black);
 }
+
+@media screen and (max-width: 600px) {
+  .about-more {
+    font-size: var(--f-u30);
+  }
+
+  .about-name {
+    font-size: var(--f-u30);
+  }
+
+  .about-title {
+    font-size: var(--f-u60);
+  }
+}
