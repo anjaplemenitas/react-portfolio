@@ -18,7 +18,6 @@
   --f-u25: 25px;
   --f-u30: 30px;
   --f-u50: 50px;
-  --f-u60: 60px;
   --f-umax: 10rem;
 
   /* font-family */
@@ -82,6 +81,10 @@ body {
   font-family: var(--f-thin);
   background-position: bottom;
   margin: 6rem 0 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .title-footer {
@@ -102,10 +105,4 @@ body {
   color: var(--c-black);
   top: 2px;
   position: relative;
-}
-
-@media screen and (max-width: 600px) {
-  .parallelogram {
-    width: 40rem;
-  }
 }
