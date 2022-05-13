@@ -1,10 +1,7 @@
 .contact {
   font-family: var(--f-1title);
   margin-left: 15rem;
-  position: absolute;
   bottom: var(--f-umax);
-  left: 0;
-  width: 100%;
 }
 
 h3 {

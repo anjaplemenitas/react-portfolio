@@ -21,12 +21,12 @@ const data = [
   },
 
   {
-    id: 2,
-    image: allgames,
-    title: 'Games in the Dungeon',
-    type: 'Web',
-    made_with: ['Rails', 'Ruby', 'HTML', 'Css'],
-    github: 'https://github.com/anjaplemenitas/games_in_the_dungeon/blob/master/README.md',
+    id: 1,
+    image: calendar,
+    title: 'OddRecipe',
+    type: 'WebApp',
+    made_with: ['Rails', 'Ruby', 'HTML', 'Css', 'JavaScript'],
+    github: 'https://github.com/anjaplemenitas/OddRecipe/blob/master/README.md',
   },
 
   {
@@ -39,12 +39,12 @@ const data = [
   },
 
   {
-    id: 2,
-    image: allgames,
-    title: 'Games in the Dungeon',
-    type: 'Web',
-    made_with: ['Rails', 'Ruby', 'HTML', 'Css'],
-    github: 'https://github.com/anjaplemenitas/games_in_the_dungeon/blob/master/README.md',
+    id: 1,
+    image: calendar,
+    title: 'OddRecipe',
+    type: 'WebApp',
+    made_with: ['Rails', 'Ruby', 'HTML', 'Css', 'JavaScript'],
+    github: 'https://github.com/anjaplemenitas/OddRecipe/blob/master/README.md',
   },
 
   {
@@ -55,9 +55,6 @@ const data = [
     made_with: ['Rails', 'Ruby', 'HTML', 'Css'],
     github: 'https://github.com/anjaplemenitas/games_in_the_dungeon/blob/master/README.md',
   },
-
-
-
 
 ]
 
