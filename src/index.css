@@ -55,7 +55,6 @@ body {
 }
 
 .navbar {
-  border-style: solid;
   height: 0;
   width: 100%;
 }
@@ -71,12 +70,14 @@ body {
 }
 
 
-.parallelogram {
-position: absolute;
-    border-bottom: 61px solid transparent;
-    border-right: 309px solid black;
-    border-top: 0 solid transparent;
-    right: 0;
+.trapezoid {
+  position: absolute;
+  width: 18rem;
+  height: 70px;
+  background: var(--c-brown);
+  transform: perspective(14px) rotateX(-2deg);
+  right: 0;
+  transform-origin: right;
 }
 
 
