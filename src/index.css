@@ -52,6 +52,12 @@ body {
   margin: 0;
 }
 
+.navbar {
+  border-style: solid;
+  height: 0;
+  width: 100%;
+}
+
 .links-navbar {
   display: flex;
   justify-content: flex-end;
@@ -64,13 +70,11 @@ body {
 
 
 .parallelogram {
-  position: absolute;
-  top: -14px;
-  right: -35px;
-  width: 21rem;
-  height: 5rem;
-  transform: skew(35deg);
-  background: var(--c-brown);
+position: absolute;
+    border-bottom: 61px solid transparent;
+    border-right: 309px solid black;
+    border-top: 0 solid transparent;
+    right: 0;
 }
 
 
@@ -79,8 +83,10 @@ body {
 .footer {
   text-align: center;
   font-family: var(--f-thin);
-  background-position: bottom;
   margin: 6rem 0 1rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .title-footer {

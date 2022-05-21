@@ -3,7 +3,7 @@ import "../app.css";
 
 export const Navbar = () => {
   return (
-    <div>
+    <div className="navbar">
       <div className="parallelogram"></div>
       <div className="links-navbar">
         <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Project</a>
