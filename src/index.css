@@ -13,12 +13,14 @@
   --c-white: #ffffff;
 
   /* font-size */
+  --f-u8: 8px;
+  --f-u10: 10px;
   --f-u15: 15px;
   --f-u20: 20px;
   --f-u25: 25px;
   --f-u30: 30px;
   --f-u50: 50px;
-  --f-umax: 10rem;
+  --f-umax: 8rem;
 
   /* font-family */
   --f-thin: 'Nunito', sans-serif;
@@ -90,11 +92,11 @@ position: absolute;
 }
 
 .title-footer {
-  font-size: var(--f-u15);
+  font-size: var(--f-u8);
 }
 
 .built-with-footer {
-  font-size: var(--f-u20);
+  font-size: var(--f-u10);
   display: flex;
   justify-content: center;
   gap: 20px;

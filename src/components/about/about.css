@@ -5,7 +5,7 @@
 
 .about-name {
   font-family: var(--f-1title);
-  font-size: var(--f-u50);
+  font-size: var(--f-u30);
 }
 
 .about-title {
@@ -16,7 +16,7 @@
 
 .about-more {
   font-family: var(--f-thin);
-  font-size: var(--f-u30);
+  font-size: var(--f-u25);
   padding-top: 3rem;
 }
 
