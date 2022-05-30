@@ -6,6 +6,7 @@
 
 .contact h1 {
   font-size: var(--f-u20);
+  padding-top: 5rem;
 }
 
 .contact h3 {

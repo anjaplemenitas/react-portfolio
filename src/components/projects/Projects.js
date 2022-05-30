@@ -20,7 +20,7 @@ function Projects() {
         <hr className="main-line-projects"></hr>
       </div>
       <div>
-        <section className="project-container">
+        <div className="project-container">
         {
           data.map(({id, image, title, type, made_with, github}) => {
             return (
@@ -46,7 +46,7 @@ function Projects() {
             )
           })
         }
-        </section>
+        </div>
       </div>
     </div>
   )
