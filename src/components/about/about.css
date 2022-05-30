@@ -15,17 +15,22 @@
 }
 
 .about-more {
-  font-family: var(--f-thin);
-  font-size: var(--f-u25);
   padding-top: 3rem;
 }
 
 .about-more > a {
-  font-family: var(--f-cv);
-  text-decoration: none;
-  font-weight: bolder;
+  font-family: var(--f-thin);
+  font-size: var(--f-u25);
   color: var(--c-black);
+  text-decoration: none;
+  background-color: var(--c-brown);
+  padding: 10px 30px;
 }
+
+.about-more > a:hover {
+  color: var(--c-grey);
+}
+
 
 @media screen and (max-width: 600px) {
   .about-more {
