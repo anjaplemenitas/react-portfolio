@@ -59,6 +59,12 @@ body {
   width: 100%;
 }
 
+.links-navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .links-navbar {
   display: flex;
   justify-content: flex-end;
@@ -72,8 +78,8 @@ body {
 
 .trapezoid {
   position: absolute;
-  width: 18rem;
-  height: 70px;
+  width: 16rem;
+  height: 4rem;
   background: var(--c-brown);
   transform: perspective(14px) rotateX(-2deg);
   right: 0;

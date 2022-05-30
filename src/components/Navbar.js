@@ -6,8 +6,8 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="trapezoid"></div>
       <div className="links-navbar">
-        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Project</a>
-        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Contact</a>
+        <a href="/">Project</a>
+        <a href="/">Contact</a>
       </div>
     </div>
   )
