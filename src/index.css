@@ -117,3 +117,24 @@ body {
   top: 2px;
   position: relative;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  /* navbar */
+  .trapezoid {
+    width: 12rem;
+    height: 55px;
+  }
+  .links-navbar a {
+    font-size: 15px;
+  }
+  .links-navbar {
+    padding: 1rem 2rem 0 0;
+  }
+}

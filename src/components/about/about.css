@@ -44,4 +44,13 @@
   .about-title {
     font-size: var(--f-u60);
   }
+
+  .about {
+    padding: 5rem 3rem;
+  }
+
+  .about-more > a {
+    font-size: var(--f-u15);
+    padding: 8px 16px;
+  }
 }
