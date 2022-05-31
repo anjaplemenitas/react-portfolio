@@ -6,8 +6,8 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="trapezoid"></div>
       <div className="links-navbar">
-        <a href="/">Project</a>
-        <a href="/">Contact</a>
+        <button>Project</button>
+        <button>Contact</button>
       </div>
     </div>
   )

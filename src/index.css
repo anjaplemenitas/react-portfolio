@@ -60,10 +60,13 @@ body {
   width: 100%;
 }
 
-.links-navbar a {
+.links-navbar > button {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  border: none;
+  background-color: #bb8d58;
+  font-family: var(--f-thin);
+  font-size: var(--f-u20);
 }
 
 .links-navbar {
@@ -71,9 +74,7 @@ body {
   justify-content: flex-end;
   gap: 2rem;
   position: relative;
-  padding: 1rem 3rem 0 0;
-  font-family: var(--f-thin);
-  font-size: var(--f-u25);
+  padding: 1rem 2rem 0 0;
 }
 
 
@@ -140,11 +141,12 @@ body {
     width: 12rem;
     height: 55px;
   }
-  .links-navbar a {
+  .links-navbar > button {
     font-size: var(--f-u15);
   }
   .links-navbar {
-    padding: 1rem 2rem 0 0;
+    padding: 1rem 1rem 0 0;
+    gap: 1rem;
   }
 
   /* footer */
