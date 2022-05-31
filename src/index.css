@@ -19,6 +19,7 @@
   --f-u20: 20px;
   --f-u25: 25px;
   --f-u30: 30px;
+  --f-u40: 40px;
   --f-u50: 50px;
   --f-umax: 8rem;
 
@@ -105,6 +106,7 @@ body {
 .built-with-footer {
   font-size: var(--f-u10);
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
   padding-bottom: 10px;
@@ -121,7 +123,14 @@ body {
 
 
 @media screen and (max-width: 1024px) {
+  /* footer */
+  .built-with-footer {
+    font-size: var(--f-u10);
+  }
 
+  .built-with-footer > a {
+    font-size: var(--f-u15);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -132,9 +141,15 @@ body {
     height: 55px;
   }
   .links-navbar a {
-    font-size: 15px;
+    font-size: var(--f-u15);
   }
   .links-navbar {
     padding: 1rem 2rem 0 0;
+  }
+
+  /* footer */
+
+  .built-with-footer > a {
+    font-size: var(--f-u15);
   }
 }

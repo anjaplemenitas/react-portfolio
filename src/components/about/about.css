@@ -38,15 +38,15 @@
   }
 
   .about-name {
-    font-size: var(--f-u30);
+    font-size: var(--f-40);
   }
 
   .about-title {
-    font-size: var(--f-u60);
+    font-size: var(--f-u40);
   }
 
   .about {
-    padding: 5rem 3rem;
+    padding: 7rem 3rem 4rem 3rem;
   }
 
   .about-more > a {

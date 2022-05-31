@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(78vh - 10px);
+
 }
 
 .portfolio-items:hover {
@@ -88,14 +88,39 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .project-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+
+  .project {
+    margin-left: 15px;
   }
+
+  .project > h3 {
+    text-align: left;
+    margin-left: 8rem;
+  }
+
+  .project-container {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 45px 15px;
+  }
+
   .portfolio-items {
-    height: calc(78vh - 10px);
+    height: calc(70vh - 10px);
+  }
+
+  .project-links {
+    padding: 0 8px 0 8px;
+  }
+
+  .project-links > ul {
+    gap: 22px;
+    list-style-type: revert;
+    font-size: 12px;
+    padding-left: 18px;
+  }
+
+  .project-links > a {
+    font-size: 22px;
   }
 }
-
-/* width: 12rem;
-    height: 55px; */
