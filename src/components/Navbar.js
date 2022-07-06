@@ -1,5 +1,6 @@
-import React from 'react';
-import "../app.css";
+import React from 'react'
+import '../app.css'
+import { Link } from 'react-scroll'
 
 export const Navbar = () => {
   return (
@@ -7,11 +8,25 @@ export const Navbar = () => {
       <div className="trapezoid"></div>
       <div className="links-navbar">
         <button>
-          Project</button>
+          {/* <Link to="Projects" spy={true} smooth={true}> */}
+          Project
+          {/* </Link> */}
+        </button>
         <button>Contact</button>
       </div>
     </div>
   )
 }
 
-export default Navbar;
+// OnClick
+// const scrollProjects = () =>
+//   window.scrollTo({
+//     bottom: project,
+//     behavior: 'smooth',
+//   })
+
+// const scrollContacts = () => {
+//   console.log('yes!')
+// }
+
+export default Navbar
