@@ -7,26 +7,15 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="trapezoid"></div>
       <div className="links-navbar">
-        <button>
-          {/* <Link to="Projects" spy={true} smooth={true}> */}
+        <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>
           Project
-          {/* </Link> */}
-        </button>
-        <button>Contact</button>
+        </Link>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          Contact
+        </Link>
       </div>
     </div>
   )
 }
-
-// OnClick
-// const scrollProjects = () =>
-//   window.scrollTo({
-//     bottom: project,
-//     behavior: 'smooth',
-//   })
-
-// const scrollContacts = () => {
-//   console.log('yes!')
-// }
 
 export default Navbar

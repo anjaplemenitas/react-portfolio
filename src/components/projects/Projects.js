@@ -13,7 +13,7 @@ class Question extends React.Component {
 function Projects() {
   return (
     <React.Fragment>
-      <div className="project">
+      <div className="project" id="projects">
         <h3>Projects</h3>
         <hr className="main-line-projects"></hr>
       </div>

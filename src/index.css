@@ -2,11 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Lekton&family=Nunito:wght@200&display=swap');
 
-
-
 :root {
-	/* color */
-  --c-brown: #BB8D58;
+  /* color */
+  --c-brown: #bb8d58;
   --c-black: #000;
   --c-grey: #505050;
   --c-lightgrey: #787878;
@@ -45,12 +43,11 @@
   border-top: 5px solid var(--c-brown);
 }
 
-
 /* navbar */
 
 body {
   color: var(--c-black);
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
   position: relative;
   margin: 0;
 }
@@ -60,7 +57,7 @@ body {
   width: 100%;
 }
 
-.links-navbar > button {
+.links-navbar > a {
   text-decoration: none;
   color: black;
   border: none;
@@ -77,7 +74,6 @@ body {
   padding: 1rem 2rem 0 0;
 }
 
-
 .trapezoid {
   position: absolute;
   width: 16rem;
@@ -87,7 +83,6 @@ body {
   right: 0;
   transform-origin: right;
 }
-
 
 /* footer */
 
@@ -121,8 +116,6 @@ body {
   position: relative;
 }
 
-
-
 @media screen and (max-width: 1024px) {
   /* footer */
   .built-with-footer {
@@ -135,13 +128,12 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-
   /* navbar */
   .trapezoid {
     width: 12rem;
     height: 55px;
   }
-  .links-navbar > button {
+  .links-navbar > a {
     font-size: var(--f-u15);
   }
   .links-navbar {
