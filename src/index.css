@@ -14,6 +14,7 @@
   --f-u8: 8px;
   --f-u10: 10px;
   --f-u15: 15px;
+  --f-u17: 17px;
   --f-u20: 20px;
   --f-u25: 25px;
   --f-u30: 30px;
@@ -134,7 +135,7 @@ body {
     height: 55px;
   }
   .links-navbar > a {
-    font-size: var(--f-u15);
+    font-size: var(--f-u17);
   }
   .links-navbar {
     padding: 1rem 1rem 0 0;

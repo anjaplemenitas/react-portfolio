@@ -78,7 +78,7 @@ img {
     gap: 1rem;
   }
   .portfolio-items {
-    height: calc(78vh - 10px);
+    height: calc(78vh - -12px);
   }
 }
 
@@ -87,20 +87,15 @@ img {
     margin-left: 15px;
   }
 
-  .project > h3 {
-    text-align: left;
-    margin-left: 8rem;
-  }
-
   .project-container {
-    gap: 1rem;
+    gap: 6rem;
     display: flex;
     flex-direction: column;
-    margin: 45px 15px;
+    margin: 45px 30px;
   }
 
   .portfolio-items {
-    height: calc(70vh - 10px);
+    height: calc(70vh - -45px);
   }
 
   .project-links {
