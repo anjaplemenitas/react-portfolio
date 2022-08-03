@@ -37,7 +37,7 @@ export const Contact = () => {
           <a href="anja.plemenitas@gmail.com"> anja.plemenitas@gmail.com</a>
         </h3>
         <h3>You can also use the form below:</h3>
-        {/* <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="container-form">
             <div className="form-input">
               <div className="text-input">
@@ -65,7 +65,7 @@ export const Contact = () => {
               Submit
             </button>
           </div>
-        </form> */}
+        </form>
       </div>
 
       <div className="socials">
