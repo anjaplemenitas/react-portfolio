@@ -1,8 +1,31 @@
 import React from 'react'
 import './contact.css'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 export const Contact = () => {
-  function sendEmail(e) {}
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_x4y6f8q',
+        'template_dfmm4ll',
+        form.current,
+        'CPg5MsagzpFeQkOr-',
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        },
+      )
+    e.target.reset()
+  }
 
   return (
     <div className="contact" id="contact">
@@ -10,10 +33,10 @@ export const Contact = () => {
       <hr className="main-line"></hr>
       <h3>anja.plemenitas@gmail.com</h3>
 
-      <form onSubmit={sendEmail}>
+      <form ref={form} onSubmit={sendEmail}>
         <label>
           Subject:
-          <input type="text" name="name" />
+          <input type="text" name="subject" />
         </label>
         <label>
           Name:
@@ -21,11 +44,11 @@ export const Contact = () => {
         </label>
         <label>
           Email:
-          <input type="text" name="name" />
+          <input type="text" name="email" />
         </label>
         <label>
           Message:
-          <input type="text" name="name" />
+          <input type="text" name="message" />
         </label>
         <input type="submit" value="Submit" />
       </form>
