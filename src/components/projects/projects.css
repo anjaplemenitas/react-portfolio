@@ -60,7 +60,7 @@ img {
 .project-title {
   display: flex;
   gap: 25px;
-  align-items: flex-end;
+  align-items: center;
   padding: 20px;
 }
 
@@ -75,10 +75,10 @@ img {
 @media screen and (max-width: 1024px) {
   .project-container {
     grid-template-columns: 3fr;
-    gap: 1rem;
+    gap: 3rem;
   }
   .portfolio-items {
-    height: calc(78vh - -12px);
+    height: 100%;
   }
 }
 
@@ -88,14 +88,14 @@ img {
   }
 
   .project-container {
-    gap: 6rem;
+    gap: 3rem;
     display: flex;
     flex-direction: column;
     margin: 45px 30px;
   }
 
   .portfolio-items {
-    height: calc(70vh - -45px);
+    height: 100%;
   }
 
   .project-links {
