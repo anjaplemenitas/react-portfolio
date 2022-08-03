@@ -31,27 +31,42 @@ export const Contact = () => {
     <div className="contact" id="contact">
       <h1>Contact</h1>
       <hr className="main-line"></hr>
-      <h3>anja.plemenitas@gmail.com</h3>
-
-      <form ref={form} onSubmit={sendEmail}>
-        <label>
-          Subject:
-          <input type="text" name="subject" />
-        </label>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <label>
+      <div className="contact-info">
+        <h3>
           Email:
-          <input type="text" name="email" />
-        </label>
-        <label>
-          Message:
-          <input type="text" name="message" />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+          <a href="anja.plemenitas@gmail.com"> anja.plemenitas@gmail.com</a>
+        </h3>
+        <h3>You can also use the form below:</h3>
+        {/* <form ref={form} onSubmit={sendEmail}>
+          <div className="container-form">
+            <div className="form-input">
+              <div className="text-input">
+                <label>
+                  <input type="text" name="subject" placeholder="Subject" />
+                </label>
+                <label>
+                  <input type="text" name="name" placeholder="Name" />
+                </label>
+                <label>
+                  <input type="text" name="email" placeholder="Email" />
+                </label>
+              </div>
+              <div className="text-area-input">
+                <label>
+                  <textarea
+                    type="textarea"
+                    name="message"
+                    placeholder="Message"
+                  />
+                </label>
+              </div>
+            </div>
+            <button type="submit" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form> */}
+      </div>
 
       <div className="socials">
         <h2>Socials</h2>
