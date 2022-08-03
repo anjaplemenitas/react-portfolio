@@ -4,7 +4,7 @@ import Contact from './components/contact/Contact'
 import Navbar from './components/Navbar.js'
 import Footer from './components/Footer.js'
 import Projects from './/components/projects/Projects.js'
-import './app.css'
+import './App.css'
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import "../app.css";
-import { FaGithub } from "react-icons/fa";
+import React from 'react'
+import '../App.css'
+import { FaGithub } from 'react-icons/fa'
 
 class Question extends React.Component {
   render() {
@@ -12,12 +12,14 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="built-with-footer">
-        <div>• React  • CSS  • Html  • JavaScript</div>
-        <a href="/"><Question /></a>
+        <div>• React • CSS • Html • JavaScript</div>
+        <a href="/">
+          <Question />
+        </a>
       </div>
       <div className="title-footer">Designed & Built by Anja Plemenitas</div>
     </div>
   )
 }
 
-export default Footer;
+export default Footer
