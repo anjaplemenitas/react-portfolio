@@ -75,10 +75,13 @@ img {
 @media screen and (max-width: 1024px) {
   .project-container {
     grid-template-columns: 3fr;
-    gap: 1rem;
+    gap: 4rem;
   }
   .portfolio-items {
-    height: calc(78vh - -12px);
+    justify-content: space-evenly;
+  }
+  .portfolio-items {
+    height: 100%;
   }
 }
 
@@ -88,14 +91,15 @@ img {
   }
 
   .project-container {
-    gap: 6rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     margin: 45px 30px;
   }
 
   .portfolio-items {
-    height: calc(70vh - -45px);
+    height: 100%;
+    justify-content: space-evenly;
   }
 
   .project-links {
