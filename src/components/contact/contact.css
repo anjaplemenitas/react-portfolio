@@ -9,13 +9,72 @@
   padding-top: 5rem;
 }
 
-.contact h3 {
+.contact-info {
   font-size: var(--f-u15);
-}
-
-h3 {
   margin-left: 2rem;
   margin-top: 2rem;
+  color: var(--c-black);
+  font-family: var(--f-thin);
+}
+
+.contact-info > h3 > a {
+  color: var(--c-black);
+}
+
+/* contact form */
+
+.container-form {
+  background-color: var(--c-lightbrown);
+  padding: 10px;
+  max-width: 41rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 4px;
+}
+
+.container-form > .form-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-input > label > input {
+  border: 0;
+  padding: 1em;
+  border-radius: 3px;
+  width: 17rem;
+  font-family: var(--f-thin);
+}
+
+.text-area-input > label > textarea {
+  border: 0;
+  padding: 1em;
+  border-radius: 3px;
+  width: 20rem;
+  height: 83%;
+  font-family: var(--f-thin);
+}
+
+.container-form > button {
+  font-family: var(--f-thin);
+  font-size: var(--f-u15);
+  text-decoration: none;
+  background-color: var(--c-brown);
+  padding: 3px 25px;
+  border: 0;
+}
+
+.container-form > button:hover {
+  color: var(--c-white);
 }
 
 /* socials */
@@ -48,10 +107,30 @@ li > a:hover {
   .contact {
     margin-left: 5rem;
   }
+  .container-form {
+    align-items: unset;
+    max-width: 30rem;
+  }
+  .container-form > .form-input {
+    flex-direction: column;
+  }
+  .text-input > label > input {
+    width: 94%;
+  }
+
+  .text-area-input > label > textarea {
+    width: 94%;
+    height: 5rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .contact {
     margin-left: 2rem;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    margin-right: 2rem;
   }
 }
