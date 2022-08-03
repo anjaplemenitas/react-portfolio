@@ -3,10 +3,6 @@
   margin-left: 5rem;
 }
 
-.project > h3 {
-  text-align: center;
-}
-
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,7 +18,7 @@
   transition: var(--c-black);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;;
+  justify-content: space-between;
 }
 
 .portfolio-items:hover {
@@ -31,8 +27,8 @@
 
 img {
   object-fit: cover;
-    width: 100%;
-    height: 31.7rem;
+  width: 100%;
+  height: 22rem;
 }
 
 .project-info {
@@ -81,11 +77,39 @@ img {
     grid-template-columns: 3fr;
     gap: 1rem;
   }
+  .portfolio-items {
+    height: calc(78vh - -12px);
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .project {
+    margin-left: 15px;
+  }
+
   .project-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin: 45px 30px;
+  }
+
+  .portfolio-items {
+    height: calc(70vh - -45px);
+  }
+
+  .project-links {
+    padding: 0 8px 0 8px;
+  }
+
+  .project-links > ul {
+    gap: 22px;
+    list-style-type: revert;
+    font-size: 12px;
+    padding-left: 18px;
+  }
+
+  .project-links > a {
+    font-size: 22px;
   }
 }

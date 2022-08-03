@@ -2,23 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&family=Fredoka+One&family=Lato:wght@100;400&family=Lekton&family=Nunito:wght@200&display=swap');
 
-
-
 :root {
-	/* color */
-  --c-brown: #BB8D58;
+  /* color */
+  --c-brown: #bb8d58;
+  --c-lightbrown: #ceb394;
   --c-black: #000;
   --c-grey: #505050;
   --c-lightgrey: #787878;
   --c-white: #ffffff;
 
   /* font-size */
+  --f-u8: 8px;
+  --f-u10: 10px;
   --f-u15: 15px;
+  --f-u17: 17px;
   --f-u20: 20px;
   --f-u25: 25px;
   --f-u30: 30px;
+  --f-u40: 40px;
   --f-u50: 50px;
-  --f-umax: 10rem;
+  --f-umax: 8rem;
 
   /* font-family */
   --f-thin: 'Nunito', sans-serif;
@@ -42,20 +45,27 @@
   border-top: 5px solid var(--c-brown);
 }
 
-
 /* navbar */
 
 body {
   color: var(--c-black);
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
   position: relative;
   margin: 0;
 }
 
 .navbar {
-  border-style: solid;
   height: 0;
   width: 100%;
+}
+
+.links-navbar > a {
+  text-decoration: none;
+  color: black;
+  border: none;
+  background-color: #bb8d58;
+  font-family: var(--f-thin);
+  font-size: var(--f-u20);
 }
 
 .links-navbar {
@@ -63,20 +73,18 @@ body {
   justify-content: flex-end;
   gap: 2rem;
   position: relative;
-  padding: 1rem 3rem 0 0;
-  font-family: var(--f-thin);
-  font-size: var(--f-u25);
+  padding: 1rem 2rem 0 0;
 }
 
-
-.parallelogram {
-position: absolute;
-    border-bottom: 61px solid transparent;
-    border-right: 309px solid black;
-    border-top: 0 solid transparent;
-    right: 0;
+.trapezoid {
+  position: absolute;
+  width: 16rem;
+  height: 4rem;
+  background: var(--c-brown);
+  transform: perspective(14px) rotateX(-2deg);
+  right: 0;
+  transform-origin: right;
 }
-
 
 /* footer */
 
@@ -90,12 +98,13 @@ position: absolute;
 }
 
 .title-footer {
-  font-size: var(--f-u15);
+  font-size: var(--f-u8);
 }
 
 .built-with-footer {
-  font-size: var(--f-u20);
+  font-size: var(--f-u10);
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
   padding-bottom: 10px;
@@ -107,4 +116,36 @@ position: absolute;
   color: var(--c-black);
   top: 2px;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  /* footer */
+  .built-with-footer {
+    font-size: var(--f-u10);
+  }
+
+  .built-with-footer > a {
+    font-size: var(--f-u15);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* navbar */
+  .trapezoid {
+    width: 12rem;
+    height: 55px;
+  }
+  .links-navbar > a {
+    font-size: var(--f-u17);
+  }
+  .links-navbar {
+    padding: 1rem 1rem 0 0;
+    gap: 1rem;
+  }
+
+  /* footer */
+
+  .built-with-footer > a {
+    font-size: var(--f-u15);
+  }
 }

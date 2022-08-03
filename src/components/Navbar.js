@@ -1,16 +1,21 @@
-import React from 'react';
-import "../app.css";
+import React from 'react'
+import '../app.css'
+import { Link } from 'react-scroll'
 
 export const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="parallelogram"></div>
+      <div className="trapezoid"></div>
       <div className="links-navbar">
-        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Project</a>
-        <a href="/" style={{ textDecoration: 'none', color: 'black' }}>Contact</a>
+        <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>
+          Project
+        </Link>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+          Contact
+        </Link>
       </div>
     </div>
   )
 }
 
-export default Navbar;
+export default Navbar
