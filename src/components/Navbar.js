@@ -10,7 +10,7 @@ export const Navbar = () => {
         <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>
           Project
         </Link>
-        <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>
+        <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
           Contact
         </Link>
       </div>
