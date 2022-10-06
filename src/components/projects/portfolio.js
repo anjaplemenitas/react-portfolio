@@ -1,11 +1,11 @@
-import calendar from '../../assets/oddrecipe/calendar.png'
+import oddrecipe from '../../assets/oddrecipe/oddrecipefirstphoto.png'
 import allgames from '../../assets/gamesinthedungeon/allgames.png'
 
 const data = [
   {
     key: 1,
     id: 1,
-    image: calendar,
+    image: oddrecipe,
     title: 'OddRecipe',
     type: 'WebApp',
     made_with: ['Rails', 'Ruby', 'HTML', 'Css', 'JavaScript'],
