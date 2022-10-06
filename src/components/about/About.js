@@ -9,7 +9,7 @@ export const About = () => {
         Full Stack web <br></br> developer.
       </div>
       <div className="about-more">
-        <a href="https://drive.google.com/file/d/1D-96R-9azTGxmtKmrb7YpSEC35Bz7LFT/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/17vvUe8gjdfMtAnXQ-_tP1kJ54UNBnawM/view?usp=sharing">
           More about me
         </a>
       </div>
