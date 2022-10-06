@@ -1,5 +1,4 @@
 import React from 'react'
-import '../App.css'
 import { FaGithub } from 'react-icons/fa'
 
 class Question extends React.Component {
