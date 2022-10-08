@@ -21,7 +21,7 @@ function Projects() {
         <div className="project-container">
           {data.map(({ id, image, title, type, made_with, github }) => {
             return (
-              <div key={id} className="portfolio-items">
+              <a key={id} href={github} className="portfolio-items">
                 <div className="project-img">
                   <img src={image} alt={title}></img>
                 </div>
@@ -29,6 +29,9 @@ function Projects() {
                   <div className="project-title">
                     <h3>{title}</h3>
                     <h4>{type}</h4>
+                    <a href={github}>
+                      <Question />
+                    </a>
                   </div>
                   <div className="project-links">
                     <ul className="project-made-with">
@@ -36,12 +39,9 @@ function Projects() {
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
-                    <a href={github}>
-                      <Question />
-                    </a>
                   </div>
                 </div>
-              </div>
+              </a>
             )
           })}
         </div>

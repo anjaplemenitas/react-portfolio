@@ -19,6 +19,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  font-family: var(--f-1title);
 }
 
 .portfolio-items:hover {
@@ -42,15 +45,6 @@ img {
   padding: 0 1rem 0 0;
 }
 
-.project-links > a {
-  color: var(--c-black);
-  font-size: 2rem;
-}
-
-.project-links > a:hover {
-  color: var(--c-grey);
-}
-
 .project-links > ul {
   display: inline-flex;
   gap: 2rem;
@@ -60,8 +54,17 @@ img {
 .project-title {
   display: flex;
   gap: 25px;
-  align-items: flex-end;
   padding: 20px;
+}
+
+.project-title > a {
+  margin-left: auto;
+  color: var(--c-black);
+  font-size: 2rem;
+}
+
+.project-title > a:hover {
+  color: var(--c-grey);
 }
 
 .project-title > h3 {
@@ -113,7 +116,7 @@ img {
     padding-left: 18px;
   }
 
-  .project-links > a {
+  .project-title > a {
     font-size: 22px;
   }
 }
