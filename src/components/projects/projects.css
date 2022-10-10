@@ -122,4 +122,8 @@ img {
   .project-title > a {
     font-size: 22px;
   }
+
+  img {
+    height: 14rem;
+  }
 }
