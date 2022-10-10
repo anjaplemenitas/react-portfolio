@@ -37,34 +37,34 @@ export const Contact = () => {
           <a href="anja.plemenitas@gmail.com"> anja.plemenitas@gmail.com</a>
         </h3>
         <h3>You can also use the form below:</h3>
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="container-form">
-            <div className="form-input">
-              <div className="text-input">
-                <label>
-                  <input type="text" name="subject" placeholder="Subject" />
-                </label>
-                <label>
-                  <input type="text" name="name" placeholder="Name" />
-                </label>
-                <label>
-                  <input type="text" name="email" placeholder="Email" />
-                </label>
-              </div>
-              <div className="text-area-input">
-                <label>
-                  <textarea
-                    type="textarea"
-                    name="message"
-                    placeholder="Message"
-                  />
-                </label>
-              </div>
+        <form ref={form} onSubmit={sendEmail} className="container-form">
+          {/* <div className="container-form"> */}
+          <div className="form-input">
+            <div className="text-input">
+              <label>
+                <input type="text" name="subject" placeholder="Subject" />
+              </label>
+              <label>
+                <input type="text" name="name" placeholder="Name" />
+              </label>
+              <label>
+                <input type="text" name="email" placeholder="Email" />
+              </label>
             </div>
-            <button type="submit" value="Submit">
-              Submit
-            </button>
+            <div className="text-area-input">
+              <label>
+                <textarea
+                  type="textarea"
+                  name="message"
+                  placeholder="Message"
+                />
+              </label>
+            </div>
           </div>
+          <button type="submit" value="Submit">
+            Submit
+          </button>
+          {/* </div> */}
         </form>
       </div>
 
