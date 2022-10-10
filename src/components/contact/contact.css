@@ -26,19 +26,17 @@
 .container-form {
   background-color: var(--c-lightbrown);
   padding: 10px;
-  max-width: 41rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   border-radius: 4px;
 }
-
 .container-form > .form-input {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   justify-content: space-between;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .text-input {
@@ -49,18 +47,20 @@
 
 .text-input > label > input {
   border: 0;
-  padding: 1em;
+  padding: 10px;
   border-radius: 3px;
-  width: 17rem;
   font-family: var(--f-thin);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-area-input > label > textarea {
-  border: 0;
-  padding: 1em;
+  width: 100%;
+  border: 0px;
+  padding: 10px;
   border-radius: 3px;
-  width: 20rem;
-  height: 83%;
+  height: 10rem;
+  box-sizing: border-box;
   font-family: var(--f-thin);
 }
 
@@ -71,6 +71,7 @@
   background-color: var(--c-brown);
   padding: 3px 25px;
   border: 0;
+  border-radius: 3px;
 }
 
 .container-form > button:hover {
@@ -113,14 +114,6 @@ li > a:hover {
   }
   .container-form > .form-input {
     flex-direction: column;
-  }
-  .text-input > label > input {
-    width: 94%;
-  }
-
-  .text-area-input > label > textarea {
-    width: 94%;
-    height: 5rem;
   }
 }
 
