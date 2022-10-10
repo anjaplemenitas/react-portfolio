@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "2ea0fe656cc7b855eb40",
-    "url": "/react-portfolio/static/css/main.6d0807a7.chunk.css"
+    "revision": "bf80e1eb4e12a9a6ddf8",
+    "url": "/react-portfolio/static/css/main.fde915e1.chunk.css"
   },
   {
-    "revision": "2ea0fe656cc7b855eb40",
+    "revision": "bf80e1eb4e12a9a6ddf8",
     "url": "/react-portfolio/static/js/main.152d9cb9.chunk.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/media/allgames.0b27237d.png"
   },
   {
-    "revision": "2176661ec1cb0f6126600116f0bc9d30",
+    "revision": "691064159ae006eaadb4d88c817fd15e",
     "url": "/react-portfolio/index.html"
   }
 ];
