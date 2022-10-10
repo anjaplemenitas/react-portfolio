@@ -30,6 +30,7 @@
   flex-direction: column;
   align-items: flex-end;
   border-radius: 4px;
+  width: 90%;
 }
 .container-form > .form-input {
   display: flex;
@@ -37,12 +38,14 @@
   justify-content: space-between;
   padding-bottom: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .text-input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 
 .text-input > label > input {
@@ -54,16 +57,19 @@
   box-sizing: border-box;
 }
 
+.text-area-input {
+  width: 100%;
+}
+
 .text-area-input > label > textarea {
   width: 100%;
   border: 0px;
   padding: 10px;
   border-radius: 3px;
-  height: 10rem;
+  height: 100%;
   box-sizing: border-box;
   font-family: var(--f-thin);
 }
-
 .container-form > button {
   font-family: var(--f-thin);
   font-size: var(--f-u15);
