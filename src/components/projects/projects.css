@@ -53,8 +53,10 @@ img {
 
 .project-title {
   display: flex;
+  grid-gap: 25px;
   gap: 25px;
-  padding: 20px;
+  padding: 10px 20px;
+  align-items: flex-end;
 }
 
 .project-title > a {
@@ -110,10 +112,11 @@ img {
   }
 
   .project-links > ul {
-    gap: 22px;
+    gap: 20px;
     list-style-type: revert;
     font-size: 12px;
     padding-left: 18px;
+    flex-wrap: wrap;
   }
 
   .project-title > a {
