@@ -115,14 +115,6 @@ li > a:hover {
   .container-form > .form-input {
     flex-direction: column;
   }
-  /* .text-input > label > input {
-    width: 94%;
-  } */
-
-  /* .text-area-input > label > textarea {
-    width: 94%;
-    height: 5rem;
-  } */
 }
 
 @media screen and (max-width: 600px) {
