@@ -15,6 +15,9 @@
   margin-top: 2rem;
   color: var(--c-black);
   font-family: var(--f-thin);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .contact-info > h3 > a {
@@ -26,44 +29,50 @@
 .container-form {
   background-color: var(--c-lightbrown);
   padding: 10px;
-  max-width: 41rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   border-radius: 4px;
+  width: 90%;
 }
-
 .container-form > .form-input {
   display: flex;
-  flex-direction: row;
   gap: 10px;
   justify-content: space-between;
   padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .text-input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 
 .text-input > label > input {
   border: 0;
-  padding: 1em;
+  padding: 10px;
   border-radius: 3px;
-  width: 17rem;
   font-family: var(--f-thin);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-area-input {
+  width: 100%;
 }
 
 .text-area-input > label > textarea {
-  border: 0;
-  padding: 1em;
+  width: 100%;
+  border: 0px;
+  padding: 10px;
   border-radius: 3px;
-  width: 20rem;
-  height: 83%;
+  height: 100%;
+  box-sizing: border-box;
   font-family: var(--f-thin);
 }
-
 .container-form > button {
   font-family: var(--f-thin);
   font-size: var(--f-u15);
@@ -71,6 +80,7 @@
   background-color: var(--c-brown);
   padding: 3px 25px;
   border: 0;
+  border-radius: 3px;
 }
 
 .container-form > button:hover {
@@ -84,43 +94,36 @@
   margin-top: 4rem;
 }
 
+.socials-link {
+  display: grid;
+  padding: 20px 20px;
+}
+
+.socials-link > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link > a:hover {
+  color: var(--c-lightgrey);
+}
+
 .socials h2 {
   font-size: var(--f-u20);
-}
-
-ul {
-  list-style-type: none;
-}
-
-li > a {
-  text-decoration: none;
-  color: var(--c-black);
-  font-size: var(--f-u15);
-}
-
-li > a:hover {
-  text-decoration: none;
-  color: var(--c-grey);
 }
 
 @media screen and (max-width: 1024px) {
   .contact {
     margin-left: 5rem;
   }
+
   .container-form {
     align-items: unset;
     max-width: 30rem;
   }
   .container-form > .form-input {
     flex-direction: column;
-  }
-  .text-input > label > input {
-    width: 94%;
-  }
-
-  .text-area-input > label > textarea {
-    width: 94%;
-    height: 5rem;
   }
 }
 

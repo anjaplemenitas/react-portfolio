@@ -2,6 +2,29 @@ import React from 'react'
 import './contact.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+
+// Social media icons
+
+class Linkedin extends React.Component {
+  render() {
+    return <FaLinkedin />
+  }
+}
+
+class Instagram extends React.Component {
+  render() {
+    return <FaInstagram />
+  }
+}
+
+class Github extends React.Component {
+  render() {
+    return <FaGithub />
+  }
+}
 
 export const Contact = () => {
   const form = useRef()
@@ -37,51 +60,53 @@ export const Contact = () => {
           <a href="anja.plemenitas@gmail.com"> anja.plemenitas@gmail.com</a>
         </h3>
         <h3>You can also use the form below:</h3>
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="container-form">
-            <div className="form-input">
-              <div className="text-input">
-                <label>
-                  <input type="text" name="subject" placeholder="Subject" />
-                </label>
-                <label>
-                  <input type="text" name="name" placeholder="Name" />
-                </label>
-                <label>
-                  <input type="text" name="email" placeholder="Email" />
-                </label>
-              </div>
-              <div className="text-area-input">
-                <label>
-                  <textarea
-                    type="textarea"
-                    name="message"
-                    placeholder="Message"
-                  />
-                </label>
-              </div>
+        <form ref={form} onSubmit={sendEmail} className="container-form">
+          {/* <div className="container-form"> */}
+          <div className="form-input">
+            <div className="text-input">
+              <label>
+                <input type="text" name="subject" placeholder="Subject" />
+              </label>
+              <label>
+                <input type="text" name="name" placeholder="Name" />
+              </label>
+              <label>
+                <input type="text" name="email" placeholder="Email" />
+              </label>
             </div>
-            <button type="submit" value="Submit">
-              Submit
-            </button>
+            <div className="text-area-input">
+              <label>
+                <textarea
+                  type="textarea"
+                  name="message"
+                  placeholder="Message"
+                />
+              </label>
+            </div>
           </div>
+          <button type="submit" value="Submit">
+            Submit
+          </button>
+          {/* </div> */}
         </form>
       </div>
 
       <div className="socials">
         <h2>Socials</h2>
         <hr className="small-line"></hr>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/anjaplemenitas/">Linkedin</a>
-          </li>
-          <li>
-            <a href="https://github.com/anjaplemenitas">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/anjaplemenitas">Instagram</a>
-          </li>
-        </ul>
+        <div className="socials-link">
+          <a href="https://www.linkedin.com/in/anjaplemenitas/">
+            <Linkedin /> Linkedin
+          </a>
+          <a href="https://github.com/anjaplemenitas">
+            <Instagram />
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/anjaplemenitas">
+            <Github />
+            Instagram
+          </a>
+        </div>
       </div>
     </div>
   )
