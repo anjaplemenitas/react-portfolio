@@ -5,57 +5,62 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   margin: 3rem;
 }
 
 .portfolio-items {
-  background: var(--c-grey);
+  display: flex;
   padding: 5px;
   border-radius: 3px;
-  border: 1px solid transparent;
-  transition: var(--c-black);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: var(--f-u30);
   text-decoration: none;
-  color: black;
   font-family: var(--f-1title);
 }
 
-.portfolio-items:hover {
-  background-color: var(--c-lightgrey);
-}
-
-img {
+.project-img {
+  border: solid 5px var(--c-brown);
   object-fit: cover;
-  width: 100%;
-  height: 22rem;
+  width: 50%;
+  height: 100%;
 }
 
 .project-info {
-  background: var(--c-white);
+  padding-top: 1rem;
+}
+
+.project-details {
+  padding: 20px 20px;
+  list-style-type: disc;
 }
 
 .project-links {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem 0 0;
 }
 
 .project-links > ul {
   display: inline-flex;
   gap: 2rem;
   list-style-type: disc;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.links-media {
+  display: flex;
+  color: var(--c-black);
+  font-size: 20px;
+  gap: 5px;
+}
+
+.links-media > a:hover {
+  color: var(--c-lightgrey);
 }
 
 .project-title {
   display: flex;
   grid-gap: 25px;
   gap: 25px;
-  padding: 10px 20px;
   align-items: flex-end;
 }
 
@@ -79,51 +84,13 @@ img {
 
 @media screen and (max-width: 1024px) {
   .project-container {
-    grid-template-columns: 3fr;
-    gap: 4rem;
+    justify-content: center;
   }
   .portfolio-items {
-    justify-content: space-evenly;
-  }
-  .portfolio-items {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .project {
-    margin-left: 15px;
-  }
-
-  .project-container {
-    gap: 2rem;
-    display: flex;
     flex-direction: column;
-    margin: 45px 30px;
   }
-
-  .portfolio-items {
-    height: 100%;
-    justify-content: space-evenly;
-  }
-
-  .project-links {
-    padding: 0 8px 0 8px;
-  }
-
-  .project-links > ul {
-    gap: 20px;
-    list-style-type: revert;
-    font-size: 12px;
-    padding-left: 18px;
-    flex-wrap: wrap;
-  }
-
-  .project-title > a {
-    font-size: 22px;
-  }
-
-  img {
-    height: 14rem;
+  .project-img {
+    width: 100%;
+    height: 20rem;
   }
 }
