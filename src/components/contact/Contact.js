@@ -2,6 +2,29 @@ import React from 'react'
 import './contact.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+
+// Social media icons
+
+class Linkedin extends React.Component {
+  render() {
+    return <FaLinkedin />
+  }
+}
+
+class Instagram extends React.Component {
+  render() {
+    return <FaInstagram />
+  }
+}
+
+class Github extends React.Component {
+  render() {
+    return <FaGithub />
+  }
+}
 
 export const Contact = () => {
   const form = useRef()
@@ -71,17 +94,19 @@ export const Contact = () => {
       <div className="socials">
         <h2>Socials</h2>
         <hr className="small-line"></hr>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/anjaplemenitas/">Linkedin</a>
-          </li>
-          <li>
-            <a href="https://github.com/anjaplemenitas">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/anjaplemenitas">Instagram</a>
-          </li>
-        </ul>
+        <div className="socials-link">
+          <a href="https://www.linkedin.com/in/anjaplemenitas/">
+            <Linkedin /> Linkedin
+          </a>
+          <a href="https://github.com/anjaplemenitas">
+            <Instagram />
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/anjaplemenitas">
+            <Github />
+            Instagram
+          </a>
+        </div>
       </div>
     </div>
   )

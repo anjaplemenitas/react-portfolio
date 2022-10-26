@@ -30,9 +30,7 @@ function Projects() {
             ({ id, image, title, type, made_with, details, github, link }) => {
               return (
                 <div key={id} className="portfolio-items">
-                  <div className="project-img">
-                    <img src={image} alt={title}></img>
-                  </div>
+                  <img className="project-img" src={image} alt={title}></img>
                   <div className="project-info">
                     <div className="project-title">
                       <h3>{title}</h3>
