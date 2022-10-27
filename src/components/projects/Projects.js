@@ -3,7 +3,7 @@ import './projects.css'
 import data from './portfolio.js'
 import { FaGithub } from 'react-icons/fa'
 import { FaLink } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import FadeIn from '../animation/FadeIn'
 
 // logo
 class Github extends React.Component {
@@ -18,11 +18,6 @@ class Link extends React.Component {
   }
 }
 
-const fromRight = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, x: 30 },
-}
-
 function Projects() {
   return (
     <React.Fragment>
@@ -30,11 +25,11 @@ function Projects() {
         <h3>Projects</h3>
         <hr className="main-line-projects"></hr>
       </div>
-      <motion.div variants={fromRight}>
-        <div className="project-container">
-          {data.map(
-            ({ id, image, title, type, made_with, details, github, link }) => {
-              return (
+      <div className="project-container">
+        {data.map(
+          ({ id, image, title, type, made_with, details, github, link }) => {
+            return (
+              <FadeIn>
                 <div key={id} className="portfolio-items">
                   <img className="project-img" src={image} alt={title}></img>
                   <div className="project-info">
@@ -65,11 +60,11 @@ function Projects() {
                     </div>
                   </div>
                 </div>
-              )
-            },
-          )}
-        </div>
-      </motion.div>
+              </FadeIn>
+            )
+          },
+        )}
+      </div>
     </React.Fragment>
   )
 }
