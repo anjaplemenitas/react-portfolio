@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import { motion } from 'framer-motion'
+import Cv from '/Users/anja.plemenitas/code/anjaplemenitas/portfolio_page/src/assets/anja_plemenitas_cv.pdf'
 
 export const About = () => {
   const container = {
@@ -32,8 +33,8 @@ export const About = () => {
       </motion.div>
 
       <div className="about-more">
-        <a href="https://drive.google.com/file/d/1Q6KTvbdCDk7W-IpjR2sWPrDCZCgsclrM/view?usp=sharing">
-          More about me
+        <a href={Cv} download="anja_plemenitas_cv">
+          Download CV
         </a>
       </div>
     </div>
