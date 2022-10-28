@@ -3,7 +3,7 @@ import './projects.css'
 import data from './portfolio.js'
 import { FaGithub } from 'react-icons/fa'
 import { FaLink } from 'react-icons/fa'
-import FadeIn from '../animation/FadeIn'
+import FadeInRight from '../animation/FadeInRight'
 
 // logo
 class Github extends React.Component {
@@ -29,7 +29,7 @@ function Projects() {
         {data.map(
           ({ id, image, title, type, made_with, details, github, link }) => {
             return (
-              <FadeIn>
+              <FadeInRight>
                 <div key={id} className="portfolio-items">
                   <img className="project-img" src={image} alt={title}></img>
                   <div className="project-info">
@@ -60,7 +60,7 @@ function Projects() {
                     </div>
                   </div>
                 </div>
-              </FadeIn>
+              </FadeInRight>
             )
           },
         )}

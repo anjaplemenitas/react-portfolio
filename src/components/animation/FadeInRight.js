@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
 const fromRight = {
   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   hidden: { opacity: 0, x: 30 },
 }
 
-function FadeIn({ children }) {
+function FadeInRight({ children }) {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -28,4 +29,4 @@ function FadeIn({ children }) {
   )
 }
 
-export default FadeIn
+export default FadeInRight
