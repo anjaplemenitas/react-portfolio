@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.e19c4dda.css",
-    "main.js": "/react-portfolio/static/js/main.5d1f1934.js",
+    "main.js": "/react-portfolio/static/js/main.768dd4f4.js",
+    "static/media/anja_plemenitas_cv.pdf": "/react-portfolio/static/media/anja_plemenitas_cv.5b62eeeb87d0a4975d8f.pdf",
     "static/media/allgames.png": "/react-portfolio/static/media/allgames.80a93529d6a0d69ddbaa.png",
     "static/media/oddrecipefirstphoto.png": "/react-portfolio/static/media/oddrecipefirstphoto.17b998a69b64e2ec70e1.png",
     "index.html": "/react-portfolio/index.html",
     "main.e19c4dda.css.map": "/react-portfolio/static/css/main.e19c4dda.css.map",
-    "main.5d1f1934.js.map": "/react-portfolio/static/js/main.5d1f1934.js.map"
+    "main.768dd4f4.js.map": "/react-portfolio/static/js/main.768dd4f4.js.map"
   },
   "entrypoints": [
     "static/css/main.e19c4dda.css",
-    "static/js/main.5d1f1934.js"
+    "static/js/main.768dd4f4.js"
   ]
 }
