@@ -3,6 +3,7 @@ import './projects.css'
 import data from './portfolio.js'
 import { FaGithub } from 'react-icons/fa'
 import { FaLink } from 'react-icons/fa'
+import { FaYoutube } from 'react-icons/fa'
 import FadeInRight from '../animation/FadeInRight'
 
 // logo
@@ -18,6 +19,14 @@ class Link extends React.Component {
   }
 }
 
+class Youtube extends React.Component {
+  render() {
+    return <FaYoutube />
+  }
+}
+
+//
+
 function Projects() {
   return (
     <React.Fragment>
@@ -27,7 +36,17 @@ function Projects() {
       </div>
       <div className="project-container">
         {data.map(
-          ({ id, image, title, type, made_with, details, github, link }) => {
+          ({
+            id,
+            image,
+            title,
+            type,
+            made_with,
+            details,
+            github,
+            link,
+            youtube,
+          }) => {
             return (
               <FadeInRight>
                 <div key={id} className="portfolio-items">
@@ -54,9 +73,22 @@ function Projects() {
                       <a href={github}>
                         <Github />
                       </a>
-                      <a href={link}>
-                        <Link />
-                      </a>
+                      {typeof link !== 'undefined' ? (
+                        <a href={link}>
+                          {' '}
+                          <Link />{' '}
+                        </a>
+                      ) : (
+                        <span></span>
+                      )}
+                      {typeof youtube !== 'undefined' ? (
+                        <a href={youtube}>
+                          {' '}
+                          <Youtube />{' '}
+                        </a>
+                      ) : (
+                        <span></span>
+                      )}
                     </div>
                   </div>
                 </div>
