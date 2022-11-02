@@ -29,7 +29,10 @@
 }
 
 .about-more > a:hover {
-  color: var(--c-grey);
+  /* color: var(--c-grey); */
+  color: var(--c-darkbrown);
+  border: 1px solid var(--c-darkbrown);
+  background-color: var(--c-beige);
 }
 
 @media screen and (max-width: 600px) {
@@ -66,5 +69,11 @@
     border: 1px solid var(--c-beige);
     background-color: var(--c-darkbrown);
     color: var(--c-beige);
+  }
+
+  .about-more > a:hover {
+    color: var(--c-darkbrown);
+    border: 1px solid var(--c-darkbrown);
+    background-color: var(--c-beige);
   }
 }

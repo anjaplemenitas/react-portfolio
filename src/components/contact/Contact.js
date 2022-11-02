@@ -53,8 +53,7 @@ export const Contact = () => {
   return (
     <div className="contact">
       <h1>Contact</h1>
-      {/* <hr className="main-line"></hr> */}
-      <hr class="w-96 border-1 border-black cursor-pointer dark:border-white" />
+      <hr class="w-full border-1 border-black cursor-pointer dark:border-white" />
       <div className="contact-info">
         <h3>
           Email:
@@ -62,7 +61,6 @@ export const Contact = () => {
         </h3>
         <h3>You can also use the form below:</h3>
         <form ref={form} onSubmit={sendEmail} className="container-form">
-          {/* <div className="container-form"> */}
           <div className="form-input">
             <div className="text-input">
               <label>
@@ -88,14 +86,12 @@ export const Contact = () => {
           <button type="submit" value="Submit">
             Submit
           </button>
-          {/* </div> */}
         </form>
       </div>
 
       <div className="socials">
         <h2>Socials</h2>
-        <hr class="w-96 border-1 border-black cursor-pointer dark:border-white" />
-        {/* <hr className="small-line"></hr> */}
+        <hr class="w-full border-1 border-black cursor-pointer dark:border-white" />
         <div className="socials-link">
           <a href="https://www.linkedin.com/in/anjaplemenitas/">
             <Linkedin /> Linkedin

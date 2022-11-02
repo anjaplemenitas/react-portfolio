@@ -32,7 +32,7 @@ function Projects() {
     <React.Fragment>
       <div className="project" id="projects">
         <h3>Projects</h3>
-        <hr className="main-line-projects"></hr>
+        <hr class="w-full border-1 border-black cursor-pointer dark:border-white" />
       </div>
       <div className="project-container">
         {data.map(
@@ -63,8 +63,7 @@ function Projects() {
                         ))}
                       </ul>
                     </div>
-                    {/* TODO:  add small option for the line */}
-                    <hr class="w-96 border-1 border-black cursor-pointer  dark:border-white" />
+                    <hr class="w-full border-1 border-black cursor-pointer dark:border-white" />
                     <ul className="project-details">
                       {details.map((item) => (
                         <li key={item}>{item}</li>
