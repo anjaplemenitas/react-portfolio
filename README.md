@@ -10,9 +10,12 @@
 <table>
 <tr>
 <td>
-  Created my portfolio age while learning React.
+  Created my portfolio page while learning React.
 </td>
 </tr>
 </table>
 
-# Sneak peek
+## Sneak peek
+
+![Screenshot 2022-11-02 at 16 19 17](https://user-images.githubusercontent.com/93189774/199550064-0b65953b-4ebc-4fc9-9d43-5c7c24c097fd.png)
+![Screenshot 2022-11-02 at 16 19 34](https://user-images.githubusercontent.com/93189774/199550086-68f1c9a1-f7d6-428b-b074-f3f59b326ca3.png)
