@@ -25,12 +25,12 @@
   text-decoration: none;
   background-color: var(--c-brown);
   padding: 10px 30px;
+  border-radius: 2px;
 }
 
 .about-more > a:hover {
   color: var(--c-grey);
 }
-
 
 @media screen and (max-width: 600px) {
   .about-more {
@@ -52,5 +52,19 @@
   .about-more > a {
     font-size: var(--f-u15);
     padding: 8px 16px;
+  }
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  .about {
+    color: var(--c-beige);
+  }
+
+  .about-more > a {
+    border: 1px solid var(--c-beige);
+    background-color: var(--c-darkbrown);
+    color: var(--c-beige);
   }
 }

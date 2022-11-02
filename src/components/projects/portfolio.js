@@ -14,7 +14,8 @@ const data = [
       'Coming up with the idea and created a whole visual aspect of it',
     ],
     github: 'https://github.com/anjaplemenitas/OddRecipe/blob/master/README.md',
-    link: 'https://www.youtube.com/watch?v=f_PJcHAoMx8',
+    link: 'http://www.oddrecipe.me',
+    youtube: 'https://www.youtube.com/watch?v=f_PJcHAoMx8',
   },
 
   {
@@ -31,7 +32,8 @@ const data = [
     ],
     github:
       'https://github.com/anjaplemenitas/games_in_the_dungeon/blob/master/README.md',
-    link: '',
+    link: undefined,
+    youtube: undefined,
   },
 ]
 
