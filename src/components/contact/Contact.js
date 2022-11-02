@@ -51,9 +51,10 @@ export const Contact = () => {
   }
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact">
       <h1>Contact</h1>
-      <hr className="main-line"></hr>
+      {/* <hr className="main-line"></hr> */}
+      <hr class="w-96 border-1 border-black cursor-pointer dark:border-white" />
       <div className="contact-info">
         <h3>
           Email:
@@ -93,7 +94,8 @@ export const Contact = () => {
 
       <div className="socials">
         <h2>Socials</h2>
-        <hr className="small-line"></hr>
+        <hr class="w-96 border-1 border-black cursor-pointer dark:border-white" />
+        {/* <hr className="small-line"></hr> */}
         <div className="socials-link">
           <a href="https://www.linkedin.com/in/anjaplemenitas/">
             <Linkedin /> Linkedin

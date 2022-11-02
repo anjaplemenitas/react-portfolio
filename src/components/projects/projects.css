@@ -25,10 +25,6 @@
   height: 100%;
 }
 
-.project-info {
-  padding-top: 1rem;
-}
-
 .project-details {
   padding: 20px 20px;
   list-style-type: disc;
@@ -101,5 +97,17 @@
 
   .project-links > ul {
     column-gap: 24px;
+  }
+}
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  .project-img {
+    border: solid 5px #583a19;
+    opacity: 80%;
+  }
+  .links-media {
+    color: var(--c-beige);
   }
 }

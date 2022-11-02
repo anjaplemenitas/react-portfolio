@@ -137,3 +137,25 @@
     margin-right: 2rem;
   }
 }
+
+/* dark mode */
+
+@media (prefers-color-scheme: dark) {
+  .contact-info {
+    color: var(--c-beige);
+  }
+  .contact-info > h3 > a {
+    color: var(--c-beige);
+  }
+  .container-form {
+    background-color: var(--c-darkbrown);
+  }
+  .container-form > button {
+    background-color: var(--c-darkbrown);
+    border: 1px solid var(--c-beige);
+  }
+  .container-form > button:hover {
+    background-color: white;
+    color: var(--c-darkbrown);
+  }
+}

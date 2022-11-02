@@ -63,7 +63,8 @@ function Projects() {
                         ))}
                       </ul>
                     </div>
-                    <hr class="w-96 border-1 border-black cursor-pointer" />
+                    {/* TODO:  add small option for the line */}
+                    <hr class="w-96 border-1 border-black cursor-pointer  dark:border-white" />
                     <ul className="project-details">
                       {details.map((item) => (
                         <li key={item}>{item}</li>
